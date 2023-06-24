@@ -58,8 +58,8 @@ pub fn find_up_with<T: AsRef<Path>>(
                     return Ok(Some(path));
                 }
             }
-            target_dir = dir.parent()
         }
+        target_dir = dir.parent()
     }
     Ok(None)
 }
